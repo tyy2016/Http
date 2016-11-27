@@ -1,0 +1,16 @@
+http客户端+http服务器端-》发送http报文通信
+承载在http协议之上的数据流，建立在TCP连接的基础上，又是建立在IP协议的基础上
+可以传输任何格式的数据，对格式没有限制，通过MINE标识数据格式，JPEG,INDEX
+如何发起http请求？URL:http://http://www.linuxprobe.com（HOST）/chapter-06.html（URI）
+1.对象（HOST）（域名+端口|IP+端口|域名+默认80端口） 域名解析成-》IP
+2.资源（URI）资源的命名，在服务器的位置
+URI：统一资源标识符
+URL：统一资源定位符
+URN：统一资源命名符
+http方法：对资源的操作
+GET,POST,HEADER,DELET
+报文装载在请求头和响应头中
+请求头：起始行+请求首部+请求主体
+响应头：响应起始行+响应首部+响应主体
+关注响应起始行中的返回码，标识该次请求的状态（200；302；404）
+http协议版本：http1.1；http2.0
