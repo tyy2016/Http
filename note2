@@ -1,0 +1,11 @@
+URI：统一资源定位符
+URL（标识资源的位置）和URN（标识资源名称）是URI的子集
+URL语法：<scheme>://<user>:<password>@<host>:<port>/<path>;<args>?<query>#<flag>
+常用：<scheme>://<host>/<path>
+URL的快捷方式：相对URL；自动扩展URL
+绝对URL：包含比较全的信息
+相对URL：不完整的信息，需要基础URL作为参照进行解析
+获取绝对URL：HTML页面中<BASE>字段；资源基础的URL
+便于迁移，保持资源的可移植性
+自动扩展URL：主机名扩展+历史记录扩展
+如果资源被转移走URL即会失效，在web服务器中或web服务器间统一稳定的名字
