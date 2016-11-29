@@ -1,0 +1,14 @@
+git remote -v :查看远端绑定仓库(https://github.com/tyy2016/Http.git)
+git add file:推到本地仓库暂存区
+git commit -m "...":打tag
+git push:从本地仓库暂存区推到远端服务器
+git status：可以通过颜色区分本地仓库的文件状态，add之后颜色会改变
+git log：可以看到每一次commit的记录
+git reset --hard SHA1值：可以回滚到某一版本
+git config --global user.email "360398525@qq.com"：设置绑定邮箱
+git config --global user.name "tyy2016"：设置用户名
+git branch:查看当前处于哪个分支，*在哪个分支上
+git checkout -b dev:新创建一个Dev分支并切换到该分支上
+git checkout dev:切换到Dev分支上
+git branch -d dev:删掉dev分支
+git merge dev:合并Dev分支
