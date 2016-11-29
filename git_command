@@ -12,3 +12,10 @@ git checkout -b dev:新创建一个Dev分支并切换到该分支上
 git checkout dev:切换到Dev分支上
 git branch -d dev:删掉dev分支
 git merge dev:合并Dev分支
+
+eg:删除note3文件
+本地删除：rm -r note3
+查看状态：git status
+远端删除：git -rm note3
+commit：  git commit -m "rm note3"
+提交：	  git push
