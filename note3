@@ -1,0 +1,31 @@
+http报文
+使用流入流出描述报文方向
+报文向下游流动，发送者都在接收者的上游
+请求报文:<method><request_url><version>
+		<headers>
+		...
+		<entity_body>
+
+响应报文：<version><status_code><reason_phrase>
+		<headers>
+		...
+		<entity_body>
+version版本号：说明了应用程序支持的最高http版本
+
+首部：为响应和请求报文中添加附加信息（名： 值CRLF ）
+通用首部：DATE;通用缓存首部Cache_control
+请求首部：ACCEPT首部；条件请求首部(If-range、If-modified-Since)；安全请求首部(cookie)；代理请求首部（proxy-authention）
+响应首部:协商首部（accept-range）；安全响应首部(proxy-authenticate)
+实体首部:内容首部（content-*）；实体缓存首部（Expires、Last-modified）
+扩展首部；
+
+安全方法：GET,HEAD（不获取资源的情况下了解资源的情况）
+PUT：让服务器用请求的主体创建一个由所请求的URL命名的新文档
+POST：向服务器输入数据
+OPTIONS：询问服务器其支持的方法
+DELETE;TRACE；扩展方法
+100-199：信息性状态码
+200-299：成功状态码
+300-399：重定向状态码
+400-499：客户端错误状态码
+500-599：服务器端错误状态码
